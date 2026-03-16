@@ -1,1 +1,23 @@
-site_name: Mippum Blog
+site_name: 미쁨에듀 블로그
+site_description: Mippum's Blog from MD Files
+site_author: mippum
+site_url: https://mippum.github.io/mp-blog/
+
+theme:
+  name: material
+  language: ko
+  logo: assets/logo.png
+  favicon: assets/logo.png
+  palette:
+    primary: brown
+    accent: amber
+
+plugins:
+  - search
+  - blog
+
+extra_css:
+  - stylesheets/extra.css
+  
+nav:
+  - 홈: index.md
