@@ -1,0 +1,11 @@
+.md-nav__title {
+  display: none;
+}
+
+@media screen and (max-width: 76.1875em) {
+  .md-nav__title {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+}
