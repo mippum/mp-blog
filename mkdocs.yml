@@ -22,7 +22,6 @@ plugins:
   - macros:
       module_name: main
   - search
-  
 
 extra_css:
   - stylesheets/extra.css
@@ -31,3 +30,6 @@ nav:
   - 홈: index.md
   - 블로그 글: blog/index.md
   - 소개 : about.md
+
+extra:
+  CNAME: blog.mippum.com
