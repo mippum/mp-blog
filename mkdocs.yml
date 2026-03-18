@@ -11,14 +11,26 @@ theme:
   palette:
     primary: brown
     accent: amber
+  features:
+    - navigation.tabs
+    - navigation.footer
+  icon:
+    logo: material/home
+
+nav:
+  - 홈: index.md
+  - 연재글: blog/index.md
+  - 소개 : about.md
 
 plugins:
   - blog:
-      folder: blog
-      articles: 5
-      format: "%Y-%m-%d"
       blog_dir: blog
+      post_dir: blog/posts
+      blog_toc: true
+      post_url_format: "{categories}/{date}/{slug}/"
       post_excerpt: optional
+      post_date_format: full
+      categories: true
   - macros:
       module_name: main
   - search
@@ -26,10 +38,8 @@ plugins:
 extra_css:
   - stylesheets/extra.css
 
-nav:
-  - 홈: index.md
-  - 블로그 글: blog/index.md
-  - 소개 : about.md
+extra_javascript:
+  - scripts/extra.js
 
 extra:
   CNAME: blog.mippum.com
